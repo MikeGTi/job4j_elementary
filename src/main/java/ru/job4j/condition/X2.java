@@ -13,22 +13,5 @@ public class X2 {
             int x = 2;
             int rsl = X2.calc(a, b, c, x);
             System.out.println(rsl);
-
-            /*a = 1; b = 1; c = 1; x = 1;
-            rsl = X2.calc(a, b, c, x);
-            System.out.println(rsl);
-
-            a = 0; b = 1; c = 1; x = 1;
-            rsl = X2.calc(a, b, c, x);
-            System.out.println(rsl);
-
-            a = 1; b = 1; c = 0; x = 1;
-            rsl = X2.calc(a, b, c, x);
-            System.out.println(rsl);
-
-            a = 1; b = 1; c = 1; x = 0;
-            rsl = X2.calc(a, b, c, x);
-            System.out.println(rsl);*/
-
         }
 }
