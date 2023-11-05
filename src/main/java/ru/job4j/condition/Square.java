@@ -12,7 +12,13 @@ public class Square {
 
         public static void main(String[] args) {
             double result1 = Square.area(4, 1);
-            System.out.println(" p = 4, k = 1, s = 1, area = " + result1);
+            System.out.println(" p = 4, k = 1, area = " + result1);
+
+            result1 = Square.area(8, 2);
+            System.out.println(" p = 8, k = 2, area = " + result1);
+
+            result1 = Square.area(16, 3);
+            System.out.println(" p = 16, k = 3, area = " + result1);
         }
 
 }
