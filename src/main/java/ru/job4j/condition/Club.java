@@ -12,7 +12,8 @@ public class Club {
     public static void main(String[] args) {
         permission(true, true);
         permission(true, false);
-        permission(false, true);
         permission(false, false);
+        permission(false, true);
+
     }
 }
