@@ -1,16 +1,14 @@
 package ru.job4j.type;
 
-public class Task29 {
+public class Task37 {
     public static void main(String[] args) {
-        transform(325);
-        transform(121);
+        leftShift(123);
     }
 
-    public static void transform(int number) {
-        int num1 = number / 100;
+    public static void leftShift(int number) {
         int num2 = (number / 10) % 10;
         int num3 = number % 10;
-        int result = num1 + num2 + num3;
+        int result = (num2 * 10 + num3) * 10;
         System.out.println(result);
     }
 
