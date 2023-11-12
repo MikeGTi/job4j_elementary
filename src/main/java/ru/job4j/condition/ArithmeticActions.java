@@ -15,7 +15,15 @@ public class ArithmeticActions {
         return action;
     }
 
+    public static void numDecrease(int number) {
+        if (number > 99 && number > 0) {
+            number = number - 1;
+        }
+        System.out.println(number);
+    }
+
     public static void main(String[] args) {
-        System.out.println(selectAction(100, 200, 300));
+        //System.out.println(selectAction(100, 200, 300));
+        numDecrease(999999);
     }
 }
