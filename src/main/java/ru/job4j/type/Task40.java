@@ -2,15 +2,15 @@ package ru.job4j.type;
 
 public class Task40 {
     public static void main(String[] args) {
-        rightCircleShift(123);
+        leftCircleShift(123);
     }
 
-    public static void rightCircleShift(int number) {
+    public static void leftCircleShift(int number) {
+        int num0 = number / 1000;
         int num1 = (number / 100) % 10;
         int num2 = (number / 10) % 10;
         int num3 = number % 10;
-        int result = num3 * 100 + num1 * 10 + num2;
+        int result = num1 * 1000 + num2 * 100 + num3 * 10 + num0;
         System.out.println(result);
     }
-
 }

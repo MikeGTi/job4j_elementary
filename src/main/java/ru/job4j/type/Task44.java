@@ -25,7 +25,7 @@ public class Task44 {
         ArrayList<Integer> result = new ArrayList<>();
         while (num > 0) {
             result.add(num % 10);
-            num  = num / 10;
+            num = num / 10;
         }
         Collections.reverse(result);
         return result;

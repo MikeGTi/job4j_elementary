@@ -1,10 +1,6 @@
 package ru.job4j.type;
 
 public class Task43 {
-    public static void main(String[] args) {
-        rightNumChange(123, 456);
-    }
-
     public static void rightNumChange(int number1, int number2) {
         int num11 = (number1 / 100) % 10;
         int num12 = (number1 / 10) % 10;
@@ -16,7 +12,6 @@ public class Task43 {
 
         int result1 = num11 * 100 + num12 * 10 + num23;
         int result2 = num21 * 100 + num22 * 10 + num13;
-        System.out.println(result1 + "\n" + result2);
+        System.out.printf("%s%n%s%n", result1, result2);
     }
-
 }

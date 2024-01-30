@@ -2,10 +2,10 @@ package ru.job4j.type;
 
 public class Task30 {
     public static void main(String[] args) {
-        transform(25);
+        difference(25);
     }
 
-    public static void transform(int number) {
+    public static void difference(int number) {
         int num1 = number / 10;
         int num2 = number % 10;
         int result = Math.abs(num1 - num2);
