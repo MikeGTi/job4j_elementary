@@ -4,7 +4,6 @@ import org.junit.Test;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
-import java.util.List;
 import java.util.stream.Stream;
 
 import static org.junit.Assert.assertEquals;
