@@ -8,7 +8,6 @@ import java.util.stream.Collectors;
 import static org.junit.Assert.*;
 
 public class ArraysStreamForPrimitiveTest {
-
     @Test
     public void test() {
         int[] data = {1, 2, 3};
