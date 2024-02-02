@@ -15,7 +15,7 @@ public class Tasks6079numRelation {
     }
 
     public static void getCentury(int num) {
-        int rsl = 0;
+        int rsl;
         rsl = (num - 1) / 100 + 1;
         System.out.println(num < 1500 || 2000 < num ? "Не попадает в диапазон" : rsl);
     }
