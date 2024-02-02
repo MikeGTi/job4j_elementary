@@ -7,7 +7,8 @@ import java.io.PrintStream;
 import java.util.StringJoiner;
 
 import static org.hamcrest.core.Is.is;
-import static org.junit.Assert.*;
+import static org.hamcrest.MatcherAssert.*;
+//import static org.junit.Assert.*;
 
 public class Task125evenNonTest {
     public String ln = System.lineSeparator();
@@ -24,14 +25,12 @@ public class Task125evenNonTest {
     }
 
     @Test
-    public void when32133Then2And3133() {
+    public void when20Then20() {
         ByteArrayOutputStream out = new ByteArrayOutputStream();
         System.setOut(new PrintStream(out));
-        Task125evenNon.loop(32133);
-        StringJoiner expected = new StringJoiner(
-                System.lineSeparator(), "", System.lineSeparator())
-                .add("2").add("3 1 3 3");
-        assertThat(out.toString(), is(expected.toString()));
+        Task125evenNon.loop(20);
+        String expected = "2 0" + ln;
+        assertThat(out.toString(), is(expected));
     }
 
     @Test
@@ -44,11 +43,13 @@ public class Task125evenNonTest {
     }
 
     @Test
-    public void when20Then20() {
+    public void when32133Then2And3133() {
         ByteArrayOutputStream out = new ByteArrayOutputStream();
         System.setOut(new PrintStream(out));
-        Task125evenNon.loop(20);
-        String expected = "2 0" + ln;
-        assertThat(out.toString(), is(expected));
+        Task125evenNon.loop(32133);
+        StringJoiner expected = new StringJoiner(
+                System.lineSeparator(), "", System.lineSeparator())
+                .add("2").add("3 1 3 3");
+        assertThat(out.toString(), is(expected.toString()));
     }
 }
