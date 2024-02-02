@@ -122,7 +122,7 @@ public class Tasks6079numRelation {
 
     public static void secondsToMinutes(int seconds) {
         if (-1 < seconds && seconds < 3601) {
-            System.out.printf("Минут: %d, секунд: %d\n", seconds / 60, seconds % 60);
+            System.out.printf("Минут: %d, секунд: %d%n", seconds / 60, seconds % 60);
         } else {
             System.out.println("Расчет не производится");
         }

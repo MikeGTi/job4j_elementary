@@ -18,7 +18,7 @@ public class Task45 {
 
         int result1 = collectDigitFromNumbers(nums1);
         int result2 = collectDigitFromNumbers(nums2);
-        System.out.println(result1 + "\n" + result2);
+        System.out.println(result1 + System.lineSeparator() + result2);
     }
 
     private static ArrayList<Integer> getNumbers(int num) {
