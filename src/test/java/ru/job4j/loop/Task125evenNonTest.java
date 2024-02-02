@@ -8,7 +8,6 @@ import java.util.StringJoiner;
 
 import static org.hamcrest.core.Is.is;
 import static org.hamcrest.MatcherAssert.*;
-//import static org.junit.Assert.*;
 
 public class Task125evenNonTest {
     public String ln = System.lineSeparator();
