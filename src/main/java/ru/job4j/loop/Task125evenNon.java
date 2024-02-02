@@ -34,6 +34,6 @@ public class Task125evenNon {
     public static void loop(int num) {
         String even = getDigits(num, x -> (x == 0 || x % 2 == 0), true);
         String nonEven = getDigits(num, x -> x % 2 == 1, true);
-        System.out.print((even.isEmpty() ? "" : even + "\r\n") + (nonEven.isEmpty() ? "" : nonEven + "\r\n"));
+        System.out.print((even.isEmpty() ? "" : even + System.lineSeparator()) + (nonEven.isEmpty() ? "" : nonEven + System.lineSeparator()));
     }
 }
