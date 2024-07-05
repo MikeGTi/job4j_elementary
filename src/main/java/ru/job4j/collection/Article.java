@@ -33,7 +33,6 @@ public class Article {
         String[] words = line.split("[^a-zA-Zа-яА-Я]+");
         for (String word : words) {
             if (!originWordsMap.containsKey(word)) {
-                //System.out.printf("Not found word: %s%n%n", word);
                 rsl = false;
                 break;
             } else {
